@@ -1,0 +1,12 @@
+[project]
+name = "tinyresolver"
+version = "0.1.0"
+description = "A DNS resolver written from scratch, for learning"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+    "live: talks to real DNS servers on the internet (run with TINYRESOLVER_LIVE=1)",
+]
